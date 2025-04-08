@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Science Quiz</title>
+    <title>Music Quiz </title>
     <link rel="shortcut icon" href="quiz_logo.jpg" type="image/x-icon">
     <style>
         @import url("https://fonts.googleapis.com/css2?family-poppins:wght:@300;400;500;600;700;800;900&display=swap");
@@ -450,7 +450,7 @@
 .quiz-footer .prev-btn:hover {
     background: #c40094;
     border-color: #c40094;
-}
+} 
 
 /* Add styles for timer */
 .header-timer {
@@ -463,7 +463,6 @@
     margin-left: 20px; /* Space between score and timer */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
 } 
-
 
     </style>
 </head>
@@ -483,7 +482,7 @@
                         <span class="header-timer" id="timer">30</span> <!-- Add timer here -->
                     </div>
 
-                    <h2 class="question-text">What is the process by which plants make their own food using sunlight?</h2>
+                    <h2 class="question-text">Which instrument is commonly used to tune a guitar?</h2>
 
                     <div class="option-list">
                         <!-- <div class="option">
@@ -556,66 +555,66 @@
         <a href="#" class="info-btn continue-btn">Continue</a>
     </div>
 </div>
-     <script>
+
+    <script>
         let questions = [
     {
         numb: 1,
-        question: "What is the process by which plants make their own food using sunlight?",
-        answer: "A.Photosynthesis",
+        question: "What is the purpose of Source Code Management?",
+        answer: "B.  Tracking changes in code",
         options: [
-            "A.Photosynthesis" ,
-            "B.Respiration" ,
-            "C.Germination" ,
-            "D.Transpiration" 
+            "A.   Designing UI" ,
+            "B.  Tracking changes in code" ,
+            "C.  Improving code speed" ,
+            "D.  Improving code speed" 
 
         ] 
     }, 
     {
         numb: 2,
-        question: "Which planet is known as the Red Planet?",
-        answer: "B.Mars",
+        question: "What does SCM stand for in software development?",
+        answer: "A.  Source Code Management",
         options: [
-            "A.Earth" ,
-            "B.Mars" ,
-            "C.Venus" ,
-            "D.Jupiter" 
+            "A.  Source Code Management" ,
+            "B.  Software Compilation Method" ,
+            "C.  Secure Coding Mechanism" ,
+            "D.  System Control Manager" 
         ] 
     },
     {
         numb: 3,
-        question: "What is the smallest unit of matter?",
-        answer: "B.Nitrogen",
+        question: "What is a repository in Git?",
+        answer: "C.  A storage space for your project and its version history",
         options: [
-            "A.Oxygen" ,
-            "B.Nitrogen" ,
-            "C.Carbon Dioxide" ,
-            "D.Hydrogen"
+            "A.  A type of compiler" ,
+            "B.  A backup of your computer" ,
+            "C.  A storage space for your project and its version history" ,
+            "D.  A folder for installed programs"
         ] 
     },
     {
         numb: 4,
-        question: "Which element is represented by the symbol 'O' on the periodic table?",
-        answer: "D.Oxygen",
+        question: "Which command is used to check the current status of your Git repository?",
+        answer: "C.  git status",
         options: [
-            "A.Ozone",
-            "B.Osmium",
-            "C.Opium",
-            "D.Oxygen"
+            "A.  git push",
+            "B.  git init",
+            "C.  git status",
+            "D.  git commit"
         ]
     },
     {
         numb: 5,
-        question: "Which of the following is an example of a non-renewable resource?",
-        answer: "C.Coal",
+        question: "Which Git command is used to upload your local repo content to a remote repo?",
+        answer: "C.  git push",
         options: [
-            "A.Solar energy",
-            "B.Wind energy",
-            "C.Coal",
-            "D.Geothermal energy"
-        ]
-    } 
+            "A.  git fetch",
+            "B.  git pull",
+            "C.  git push",
+            "D.  git clone"
+        ] 
+    }
 ];  
-
 const startBtn = document.querySelector('.start-btn');
 const popupInfo = document.querySelector('.popup-info');
 const exitBtn = document.querySelector('.exit-btn');
@@ -626,6 +625,7 @@ const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.tryAgain-btn');
 const prevBtn = document.querySelector('.prev-btn'); // Get the Previous button
+
 
 
 
@@ -653,6 +653,8 @@ continueBtn.onclick = () => {
 let questionCount = 0;
 let questionNumb = 1;
 let userScore = 0;
+let answeredQuestions = new Array(questions.length).fill(false);
+let userAnswers = new Array(questions.length).fill(null); // Array to store user answers
 
 const nextBtn = document.querySelector('.next-btn');
 
@@ -663,7 +665,18 @@ nextBtn.onclick = () => {
      questionNumb++;
      questionCounter(questionNumb);
 }  
-
+nextBtn.onclick = () => {
+        questionCount++;
+        // Check if the current question is the last one
+        if (questionCount < questions.length) {
+            showQuestions(questionCount);
+            questionNumb++;
+            questionCounter(questionNumb);
+        } else {
+            // If it's the last question, show the result box
+            showResultBox();
+        }
+    };
 const optionList = document.querySelector('.option-list'); 
 
 function showQuestions(index) {
@@ -728,8 +741,26 @@ nextBtn.onclick = () => {
         // If it's the last question, show the result box
         showResultBox();
     }
-}  
+};
 
+prevBtn.onclick = () => {
+    if (questionCount > 0) { // Check if there is a previous question
+        questionCount--; // Decrement question count
+        showQuestions(questionCount); // Show the previous question
+        questionNumb--; // Decrement question number
+        questionCounter(questionNumb); // Update question counter
+    }
+};
+
+prevBtn.onclick = () => {
+        if (questionCount > 0) { // Check if there is a previous question
+            questionCount--; // Decrement question count
+            showQuestions(questionCount); // Show the previous question
+            questionNumb--; // Decrement question number
+            questionCounter(questionNumb); // Update question counter
+        }
+    };
+    
 function showResultBox() {
     quizBox.classList.remove('active');
     resultBox.classList.add('active'); // Show the result box
@@ -741,14 +772,14 @@ function showResultBox() {
     const ProgressValue = document.querySelector('.progress-value');
     let progressStartValue = 0;
     let progressEndValue = (userScore / questions.length) * 100; // Calculate the end value based on score
-    let speed = 20; // Speed of the progress update
+    let speed = 20; // Speed of the progress update 
 
     // Ensure progressEndValue is not greater than 100
     progressEndValue = Math.min(progressEndValue, 100);
 
     // Set the initial state of the circular progress
     ProgressValue.textContent = `${progressStartValue}%`; // Initialize display
-    circularProgress.style.background = `conic-gradient(#c40094 0deg, rgba(255, 255, 255, .1) 0deg)`; // Initialize background
+    circularProgress.style.background = `conic-gradient(#c40094 0deg, rgba(255, 255, 255, .1) 0deg)`; // Initialize background  
 
     let progress = setInterval(() => {
         if (progressStartValue < progressEndValue) {
@@ -790,6 +821,8 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'http://127.0.0.1:5500/quiz%20type.html';
     });
 });
+
+
 
 prevBtn.onclick = () => {
     if (questionCount > 0) { // Check if there is a previous question
@@ -865,8 +898,3 @@ function showQuestions(index) {
 </body>
 </html>  
 
-
-
-     </script>
-</body>
-</html> 
