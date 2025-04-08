@@ -478,7 +478,7 @@
                 <div class="quiz-box">
                     <h1>Quiz Quest</h1>
                     <div class="quiz-header">
-                        <span class="header-score">Score: 0 / 5</span>
+                        <span class="header-score">Score: 0 / 10</span>
                         <span class="header-timer" id="timer">30</span> <!-- Add timer here -->
                     </div>
 
@@ -506,7 +506,7 @@
                     </div>
 
                     <div class="quiz-footer">
-                        <span class="question-total">1 of 5 Questons</span>
+                        <span class="question-total">1 of 10 Questons</span>
                         <button class="prev-btn">Previous</button> <!-- New Previous Button -->
                         <button class="next-btn">Next</button>
                     </div>
@@ -518,7 +518,7 @@
                             <span class="progress-value">0%</span>
                         </div>
 
-                        <span class="score-text">Your Score 0 out of 5</span>
+                        <span class="score-text">Your Score 0 out of 10</span>
                     </div>  
 
                     <div class="buttons">
@@ -613,7 +613,63 @@
             "C.  git push",
             "D.  git clone"
         ] 
-    }
+    },
+    {
+        numb: 6,
+        question: "What is the purpose of the .gitignore file?",
+        answer: "B.  To skip files from being tracked by Git",
+        options: [
+            "A.  To ignore Git errors",
+            "B.  To skip files from being tracked by Git",
+            "C.  To delete files permanently",
+            "D.  To restore deleted files"
+        ] 
+    },
+    {
+        numb: 7,
+        question: "Which of the following best describes a 'branch' in Git?",
+        answer: "C.  An isolated line of development",
+        options: [
+            "A.  A copy of your entire OS",
+            "B.  A new repo on GitHub",
+            "C.  An isolated line of development",
+            "D.  A type of commit"
+        ] 
+    },
+    {
+        numb: 8,
+        question: "What does git merge do?",
+        answer: "B.  Combines branches",
+        options: [
+            "A.  Deletes all commits",
+            "B.  Combines branches",
+            "C.  Restores previous versions",
+            "D.  Formats the code"
+        ] 
+    },
+    {
+        numb: 9,
+        question: "Which file contains the commit history in Git?",
+        answer: "C.  .git/logs",
+        options: [
+            "A.  .commit",
+            "B.  log.txt",
+            "C.  .git/logs",
+            "D.  history.json"
+        ] 
+    },
+    {
+        numb: 10,
+        question: "What does the git clone command do?",
+        answer: "B.  Copies a remote repository to your local machine",
+        options: [
+            "A.  Deletes a repository",
+            "B.  Copies a remote repository to your local machine",
+            "C.  Merges two branches",
+            "D.  Shows the commit history"
+        ] 
+    } 
+
 ];  
 const startBtn = document.querySelector('.start-btn');
 const popupInfo = document.querySelector('.popup-info');
