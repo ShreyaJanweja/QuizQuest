@@ -556,121 +556,122 @@
     </div>
 </div>
 
-    <script>
-        let questions = [
-    {
-        numb: 1,
-        question: "What is the purpose of Source Code Management?",
-        answer: "B.  Tracking changes in code",
-        options: [
-            "A.   Designing UI" ,
-            "B.  Tracking changes in code" ,
-            "C.  Improving code speed" ,
-            "D.  Improving code speed" 
+<script>
+    let questions = [
+{
+    numb: 1,
+    question: "What is the purpose of Source Code Management?",
+    answer: "B.  Tracking changes in code",
+    options: [
+        "A.   Designing UI" ,
+        "B.  Tracking changes in code" ,
+        "C.  Improving code speed" ,
+        "D.  Improving code speed" 
 
-        ] 
-    }, 
-    {
-        numb: 2,
-        question: "What does SCM stand for in software development?",
-        answer: "A.  Source Code Management",
-        options: [
-            "A.  Source Code Management" ,
-            "B.  Software Compilation Method" ,
-            "C.  Secure Coding Mechanism" ,
-            "D.  System Control Manager" 
-        ] 
-    },
-    {
-        numb: 3,
-        question: "What is a repository in Git?",
-        answer: "C.  A storage space for your project and its version history",
-        options: [
-            "A.  A type of compiler" ,
-            "B.  A backup of your computer" ,
-            "C.  A storage space for your project and its version history" ,
-            "D.  A folder for installed programs"
-        ] 
-    },
-    {
-        numb: 4,
-        question: "Which command is used to check the current status of your Git repository?",
-        answer: "C.  git status",
-        options: [
-            "A.  git push",
-            "B.  git init",
-            "C.  git status",
-            "D.  git commit"
-        ]
-    },
-    {
-        numb: 5,
-        question: "Which Git command is used to upload your local repo content to a remote repo?",
-        answer: "C.  git push",
-        options: [
-            "A.  git fetch",
-            "B.  git pull",
-            "C.  git push",
-            "D.  git clone"
-        ] 
-    },
-    {
-        numb: 6,
-        question: "What is the purpose of the .gitignore file?",
-        answer: "B.  To skip files from being tracked by Git",
-        options: [
-            "A.  To ignore Git errors",
-            "B.  To skip files from being tracked by Git",
-            "C.  To delete files permanently",
-            "D.  To restore deleted files"
-        ] 
-    },
-    {
-        numb: 7,
-        question: "Which of the following best describes a 'branch' in Git?",
-        answer: "C.  An isolated line of development",
-        options: [
-            "A.  A copy of your entire OS",
-            "B.  A new repo on GitHub",
-            "C.  An isolated line of development",
-            "D.  A type of commit"
-        ] 
-    },
-    {
-        numb: 8,
-        question: "What does git merge do?",
-        answer: "B.  Combines branches",
-        options: [
-            "A.  Deletes all commits",
-            "B.  Combines branches",
-            "C.  Restores previous versions",
-            "D.  Formats the code"
-        ] 
-    },
-    {
-        numb: 9,
-        question: "Which file contains the commit history in Git?",
-        answer: "C.  .git/logs",
-        options: [
-            "A.  .commit",
-            "B.  log.txt",
-            "C.  .git/logs",
-            "D.  history.json"
-        ] 
-    },
-    {
-        numb: 10,
-        question: "What does the git clone command do?",
-        answer: "B.  Copies a remote repository to your local machine",
-        options: [
-            "A.  Deletes a repository",
-            "B.  Copies a remote repository to your local machine",
-            "C.  Merges two branches",
-            "D.  Shows the commit history"
-        ] 
-    } 
+    ] 
+}, 
+{
+    numb: 2,
+    question: "What does SCM stand for in software development?",
+    answer: "A.  Source Code Management",
+    options: [
+        "A.  Source Code Management" ,
+        "B.  Software Compilation Method" ,
+        "C.  Secure Coding Mechanism" ,
+        "D.  System Control Manager" 
+    ] 
+},
+{
+    numb: 3,
+    question: "What is a repository in Git?",
+    answer: "C.  A storage space for your project and its version history",
+    options: [
+        "A.  A type of compiler" ,
+        "B.  A backup of your computer" ,
+        "C.  A storage space for your project and its version history" ,
+        "D.  A folder for installed programs"
+    ] 
+},
+{
+    numb: 4,
+    question: "Which command is used to check the current status of your Git repository?",
+    answer: "C.  git status",
+    options: [
+        "A.  git push",
+        "B.  git init",
+        "C.  git status",
+        "D.  git commit"
+    ]
+},
+{
+    numb: 5,
+    question: "Which Git command is used to upload your local repo content to a remote repo?",
+    answer: "C.  git push",
+    options: [
+        "A.  git fetch",
+        "B.  git pull",
+        "C.  git push",
+        "D.  git clone"
+    ] 
+},
+{
+    numb: 6,
+    question: "What is the purpose of the .gitignore file?",
+    answer: "B.  To skip files from being tracked by Git",
+    options: [
+        "A.  To ignore Git errors",
+        "B.  To skip files from being tracked by Git",
+        "C.  To delete files permanently",
+        "D.  To restore deleted files"
+    ] 
+},
+{
+    numb: 7,
+    question: "Which of the following best describes a 'branch' in Git?",
+    answer: "C.  An isolated line of development",
+    options: [
+        "A.  A copy of your entire OS",
+        "B.  A new repo on GitHub",
+        "C.  An isolated line of development",
+        "D.  A type of commit"
+    ] 
+},
+{
+    numb: 8,
+    question: "What does git merge do?",
+    answer: "B.  Combines branches",
+    options: [
+        "A.  Deletes all commits",
+        "B.  Combines branches",
+        "C.  Restores previous versions",
+        "D.  Formats the code"
+    ] 
+},
+{
+    numb: 9,
+    question: "Which file contains the commit history in Git?",
+    answer: "C.  .git/logs",
+    options: [
+        "A.  .commit",
+        "B.  log.txt",
+        "C.  .git/logs",
+        "D.  history.json"
+    ] 
+},
+{
+    numb: 10,
+    question: "What does the git clone command do?",
+    answer: "B.  Copies a remote repository to your local machine",
+    options: [
+        "A.  Deletes a repository",
+        "B.  Copies a remote repository to your local machine",
+        "C.  Merges two branches",
+        "D.  Shows the commit history"
+    ] 
+} 
 
 ];  
+
 const startBtn = document.querySelector('.start-btn');
 const popupInfo = document.querySelector('.popup-info');
 const exitBtn = document.querySelector('.exit-btn');
@@ -680,277 +681,205 @@ const quizSection = document.querySelector('.quiz-section');
 const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.tryAgain-btn');
-const prevBtn = document.querySelector('.prev-btn'); // Get the Previous button
-
-
-
-
-startBtn.onclick = () => {
-    popupInfo.classList.add('active');
-    main.classList.add('active');
-}
-
-exitBtn.onclick = () => {
-    popupInfo.classList.remove('active');
-    main.classList.remove('active');
-}
-
-continueBtn.onclick = () => {
-    quizSection.classList.add('active');
-    popupInfo.classList.remove('active');
-    main.classList.remove('active');
-    quizBox.classList.add('active');
-
-    showQuestions(0);
-    questionCounter(1);
-    headerScore();
-} 
+const prevBtn = document.querySelector('.prev-btn');
+const optionList = document.querySelector('.option-list');
 
 let questionCount = 0;
 let questionNumb = 1;
 let userScore = 0;
 let answeredQuestions = new Array(questions.length).fill(false);
-let userAnswers = new Array(questions.length).fill(null); // Array to store user answers
+let userAnswers = new Array(questions.length).fill(null);
 
-const nextBtn = document.querySelector('.next-btn');
+startBtn.onclick = () => {
+popupInfo.classList.add('active');
+main.classList.add('active');
+};
 
-nextBtn.onclick = () => {
-     questionCount++;
-     showQuestions(questionCount);
+exitBtn.onclick = () => {
+popupInfo.classList.remove('active');
+main.classList.remove('active');
+};
 
-     questionNumb++;
-     questionCounter(questionNumb);
-}  
-nextBtn.onclick = () => {
-        questionCount++;
-        // Check if the current question is the last one
-        if (questionCount < questions.length) {
-            showQuestions(questionCount);
-            questionNumb++;
-            questionCounter(questionNumb);
-        } else {
-            // If it's the last question, show the result box
-            showResultBox();
-        }
-    };
-const optionList = document.querySelector('.option-list'); 
+continueBtn.onclick = () => {
+quizSection.classList.add('active');
+popupInfo.classList.remove('active');
+main.classList.remove('active');
+quizBox.classList.add('active');
+
+showQuestions(0);
+questionCounter(1);
+headerScore();
+startTimer();
+};
 
 function showQuestions(index) {
-    const questionText = document.querySelector('.question-text');
-    questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
+const questionText = document.querySelector('.question-text');
+questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
 
-    let optionTag = `<div class="option"><span>${questions[index].options[0]}</span></div>
-        <div class="option"><span>${questions[index].options[1]}</span></div>
-        <div class="option"><span>${questions[index].options[2]}</span></div>
-        <div class="option"><span>${questions[index].options[3]}</span></div>`;
+let optionTag = '';
+for (let i = 0; i < 4; i++) {
+    optionTag += `<div class=\"option\"><span>${questions[index].options[i]}</span></div>`;
+}
 
-    optionList.innerHTML = optionTag; 
+optionList.innerHTML = optionTag;
+const option = document.querySelectorAll('.option');
+const correctAnswer = questions[index].answer;
 
-    const option = document.querySelectorAll('.option'); 
+if (answeredQuestions[index]) {
+    const userAnswer = userAnswers[index];
+    for (let i = 0; i < option.length; i++) {
+        const optText = option[i].textContent;
+        option[i].classList.add('disabled');
+        if (optText === userAnswer) {
+            if (optText === correctAnswer) {
+                option[i].classList.add('correct');
+            } else {
+                option[i].classList.add('incorrect');
+            }
+        }
+        if (optText === correctAnswer && userAnswer !== correctAnswer) {
+            option[i].classList.add('correct');
+        }
+    }
+} else {
     for (let i = 0; i < option.length; i++) {
         option[i].setAttribute('onclick','optionSelected(this)');
     }
-}  
+}
+
+clearInterval(timer);
+startTimer();
+}
 
 function optionSelected(answer) {
-    let userAnswer = answer.textContent;
-    let correctAnswer = questions[questionCount].answer;
+if (answeredQuestions[questionCount]) return;
 
-    if (userAnswer == correctAnswer) {
-        answer.classList.add('correct'); // Mark the selected answer as correct
-        userScore++; // Increment score by 1 for a correct answer
-    } else { 
-        answer.classList.add('incorrect'); // Mark the selected answer as incorrect
-        
-        // Find the correct answer option and mark it as correct
-        const options = optionList.children; // Get all option elements
-        for (let i = 0; i < options.length; i++) {
-            if (options[i].textContent === correctAnswer) {
-                options[i].classList.add('correct'); // Add 'correct' class to the correct answer
-                break; // Exit the loop once the correct answer is found
-            }
-        } 
-    } 
-    
-    headerScore(); // Update the score display
+let userAnswer = answer.textContent;
+let correctAnswer = questions[questionCount].answer;
 
-    // Disable all options after an answer has been selected
-    const options = optionList.children; // Get all option elements
+userAnswers[questionCount] = userAnswer;
+answeredQuestions[questionCount] = true;
+
+if (userAnswer == correctAnswer) {
+    answer.classList.add('correct');
+    userScore++;
+} else {
+    answer.classList.add('incorrect');
+    const options = optionList.children;
     for (let i = 0; i < options.length; i++) {
-        options[i].classList.add('disabled'); // Add 'disabled' class to each option
+        if (options[i].textContent === correctAnswer) {
+            options[i].classList.add('correct');
+            break;
+        }
     }
-} 
+}
+
+headerScore();
+
+const options = optionList.children;
+for (let i = 0; i < options.length; i++) {
+    options[i].classList.add('disabled');
+}
+}
+
 function headerScore() {
-    const headerScoreText = document.querySelector('.header-score');
-    headerScoreText.textContent = `Score: ${userScore} / ${questions.length}`; // Update the score display
-} 
+const headerScoreText = document.querySelector('.header-score');
+headerScoreText.textContent = `Score: ${userScore} / ${questions.length}`;
+}
 
+const nextBtn = document.querySelector('.next-btn');
 nextBtn.onclick = () => {
-    questionCount++;
-    
-    // Check if the current question is the last one
-    if (questionCount < questions.length) {
-        showQuestions(questionCount);
-        questionNumb++;
-        questionCounter(questionNumb);
-    } else {
-        // If it's the last question, show the result box
-        showResultBox();
-    }
+questionCount++;
+if (questionCount < questions.length) {
+    showQuestions(questionCount);
+    questionNumb++;
+    questionCounter(questionNumb);
+} else {
+    showResultBox();
+}
 };
 
 prevBtn.onclick = () => {
-    if (questionCount > 0) { // Check if there is a previous question
-        questionCount--; // Decrement question count
-        showQuestions(questionCount); // Show the previous question
-        questionNumb--; // Decrement question number
-        questionCounter(questionNumb); // Update question counter
-    }
+if (questionCount > 0) {
+    questionCount--;
+    showQuestions(questionCount);
+    questionNumb--;
+    questionCounter(questionNumb);
+}
 };
 
-prevBtn.onclick = () => {
-        if (questionCount > 0) { // Check if there is a previous question
-            questionCount--; // Decrement question count
-            showQuestions(questionCount); // Show the previous question
-            questionNumb--; // Decrement question number
-            questionCounter(questionNumb); // Update question counter
-        }
-    };
-    
 function showResultBox() {
-    quizBox.classList.remove('active');
-    resultBox.classList.add('active'); // Show the result box
-    
-    const scoreText = document.querySelector('.score-text'); // Display the score text
-    scoreText.textContent = `You scored ${userScore} out of ${questions.length}`; // Show the score
-    
-    const circularProgress = document.querySelector('.circular-progress');
-    const ProgressValue = document.querySelector('.progress-value');
-    let progressStartValue = 0;
-    let progressEndValue = (userScore / questions.length) * 100; // Calculate the end value based on score
-    let speed = 20; // Speed of the progress update 
+quizBox.classList.remove('active');
+resultBox.classList.add('active');
 
-    // Ensure progressEndValue is not greater than 100
-    progressEndValue = Math.min(progressEndValue, 100);
+const scoreText = document.querySelector('.score-text');
+scoreText.textContent = `You scored ${userScore} out of ${questions.length}`;
 
-    // Set the initial state of the circular progress
-    ProgressValue.textContent = `${progressStartValue}%`; // Initialize display
-    circularProgress.style.background = `conic-gradient(#c40094 0deg, rgba(255, 255, 255, .1) 0deg)`; // Initialize background  
+const circularProgress = document.querySelector('.circular-progress');
+const ProgressValue = document.querySelector('.progress-value');
+let progressStartValue = 0;
+let progressEndValue = (userScore / questions.length) * 100;
+let speed = 20;
 
-    let progress = setInterval(() => {
-        if (progressStartValue < progressEndValue) {
-            progressStartValue++;
-            // Update the progress value display
-            ProgressValue.textContent = `${progressStartValue}%`;
-            circularProgress.style.background = `conic-gradient(#c40094 ${progressStartValue * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
-        } else {
-            clearInterval(progress); // Stop the interval when the progress reaches the end value
-        }
-    }, speed);
-} 
+progressEndValue = Math.min(progressEndValue, 100);
+ProgressValue.textContent = `${progressStartValue}%`;
+circularProgress.style.background = `conic-gradient(#c40094 0deg, rgba(255, 255, 255, .1) 0deg)`;
 
+let progress = setInterval(() => {
+    if (progressStartValue < progressEndValue) {
+        progressStartValue++;
+        ProgressValue.textContent = `${progressStartValue}%`;
+        circularProgress.style.background = `conic-gradient(#c40094 ${progressStartValue * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+    } else {
+        clearInterval(progress);
+    }
+}, speed);
+}
 
 tryAgainBtn.onclick = () => {
-    questionCount = 0; // Reset question count to 0
-    questionNumb = 1; // Reset question number to 1
-    userScore = 0; // Reset user score to 0
+questionCount = 0;
+questionNumb = 1;
+userScore = 0;
 
-    // Hide the result box and show the quiz box
-    resultBox.classList.remove('active');
-    quizBox.classList.add('active');
+resultBox.classList.remove('active');
+quizBox.classList.add('active');
+headerScore();
+showQuestions(questionCount);
+questionCounter(questionNumb);
+};
 
-    // Reset the score display
-    headerScore();
-
-    // Show the first question
-    showQuestions(questionCount);
-    questionCounter(questionNumb);
-}; 
-
-// Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    const goHomeBtn = document.querySelector('.goHome-btn');
-
-    // Add click event listener to the goHome button
-    goHomeBtn.addEventListener('click', function() {
-        // Redirect to quiz_type.html
-        window.location.href = 'http://127.0.0.1:5500/quiz%20type.html';
-    });
+const goHomeBtn = document.querySelector('.goHome-btn');
+goHomeBtn.addEventListener('click', function() {
+    window.location.href = 'http://127.0.0.1:5500/quiz%20type.html';
+});
 });
 
-
-
-prevBtn.onclick = () => {
-    if (questionCount > 0) { // Check if there is a previous question
-        questionCount--; // Decrement question count
-        showQuestions(questionCount); // Show the previous question
-        questionNumb--; // Decrement question number
-        questionCounter(questionNumb); // Update question counter
-    }
-};  
-
-// timer
 let timer;
-let timeLimit = 30; // Time limit in seconds
-const timerElement = document.getElementById('timer'); // Timer display element
+let timeLimit = 30;
+const timerElement = document.getElementById('timer');
 
 function startTimer() {
-    let timeRemaining = timeLimit; // Set the initial time remaining
-    timerElement.textContent = timeRemaining; // Display the initial time
-
-    timer = setInterval(() => {
-        timeRemaining--; // Decrease time remaining by 1 second
-        timerElement.textContent = timeRemaining; // Update timer display
-
-        if (timeRemaining <= 0) { // Check if time is up
-            clearInterval(timer); // Stop the timer
-            freezeQuestion(); // Freeze the question
-        }
-    }, 1000); // Update every second
+let timeRemaining = timeLimit;
+timerElement.textContent = timeRemaining;
+timer = setInterval(() => {
+    timeRemaining--;
+    timerElement.textContent = timeRemaining;
+    if (timeRemaining <= 0) {
+        clearInterval(timer);
+        freezeQuestion();
+    }
+}, 1000);
 }
 
 function freezeQuestion() {
-    const options = optionList.children; // Get all option elements
-    for (let i = 0; i < options.length; i++) {
-        options[i].classList.add('disabled'); // Disable all options
-    }
+const options = optionList.children;
+for (let i = 0; i < options.length; i++) {
+    options[i].classList.add('disabled');
 }
-
-// Modify the continueBtn.onclick function to start the timer
-continueBtn.onclick = () => {
-    quizSection.classList.add('active');
-    popupInfo.classList.remove('active');
-    main.classList.remove('active');
-    quizBox.classList.add('active');
-
-    showQuestions(0);
-    questionCounter(1);
-    headerScore();
-    startTimer(); // Start the timer when the quiz starts
-};
-
-// Modify the showQuestions function to reset the timer when a new question is displayed
-function showQuestions(index) {
-    const questionText = document.querySelector('.question-text');
-    questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
-
-    let optionTag = `<div class="option"><span>${questions[index].options[0]}</span></div>
-        <div class="option"><span>${questions[index].options[1]}</span></div>
-        <div class="option"><span>${questions[index].options[2]}</span></div>
-        <div class="option"><span>${questions[index].options[3]}</span></div>`;
-
-    optionList.innerHTML = optionTag; 
-
-    const option = document.querySelectorAll('.option'); 
-    for (let i = 0; i < option.length; i++) {
-        option[i].setAttribute('onclick','optionSelected(this)');
-    }
-
-    // Reset and start the timer for the new question
-    clearInterval(timer); // Clear any existing timer
-    startTimer(); // Start the timer for the new question
 }
-    </script>
+</script>
+
 </body>
 </html>  
 
