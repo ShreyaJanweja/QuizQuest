@@ -941,7 +941,6 @@ continueBtn.onclick = () => {
     headerScore();
     startTimer(); // Start the timer when the quiz starts
 };
-
 // Modify the showQuestions function to reset the timer when a new question is displayed
 function showQuestions(index) {
     const questionText = document.querySelector('.question-text');
@@ -958,8 +957,7 @@ function showQuestions(index) {
     for (let i = 0; i < option.length; i++) {
         option[i].setAttribute('onclick','optionSelected(this)');
     }
-
-    // Reset and start the timer for the new question
+   // Reset and start the timer for the new question
     clearInterval(timer); // Clear any existing timer
     startTimer(); // Start the timer for the new question
 }
