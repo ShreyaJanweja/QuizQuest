@@ -40,6 +40,7 @@ nav h1 {
     font-family: 'Times New Roman', Times, serif;
     margin-left:10px;
 }
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -102,3 +103,4 @@ nav ul li a{
 #effect:hover {
     text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink, 0 0 40px pink;
 } 
+
